@@ -16,4 +16,8 @@ end
 % Mydistance function for weighted Euclidean distance
 function out = mydistance(x, y, tipo)
     if tipo == 0
-        out = sum((x - y).^2).^0
+        out = sum((x - y).^2).^0.5;
+    else
+        out = (sum((x - y).^2)).^0.5;
+    end
+end
